@@ -1,3 +1,5 @@
+Commands required to run the applicaition 
+
  C:\C#\K8s> kubectl get pod
 No resources found in default namespace.
 PS C:\C#\K8s> kubectl apply -f mongo-config.yaml
@@ -7,13 +9,8 @@ configmap/mongo-config created
 PS C:\C#\K8s> kubectl apply -f mongo-secret.yaml
 secret/mongo-secret created
 PS C:\C#\K8s> kubectl apply -f mongo.yaml
-error: error parsing mongo.yaml: error converting YAML to JSON: yaml: line 23: did not find expected '-' indicator
-PS C:\C#\K8s> kubectl apply -f mongo.yaml
 deployment.apps/mongo-deployment created
-service/mongo-service created
-PS C:\C#\K8s> kubectl apply -f webapp.yaml
-deployment.apps/webapp-deployment created
-error: error parsing webapp.yaml: error converting YAML to JSON: yaml: line 7: mapping values are not allowed in this context      
+service/mongo-service created   
 PS C:\C#\K8s> kubectl apply -f webapp.yaml
 deployment.apps/webapp-deployment unchanged
 service/webapp-service created
